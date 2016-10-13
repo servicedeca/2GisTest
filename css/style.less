@@ -1,0 +1,66 @@
+body{
+	background: #f6f2de;
+}
+
+.transition(@time){
+	transition: all @time linear;
+	-moz-transition: all @time linear;
+	-webkit-transition: all @time linear;
+	-o-transition: all @time linear;
+}
+
+.container{
+	position: relative;
+}
+
+.full-height{
+	height: 90vh;
+	margin-top: 5vh;
+}
+
+.card{
+	background: #fff;
+	position: absolute;
+	left: 0px;
+	height: 100%;
+	width: 400px;
+	box-shadow: 0px 0px 5px 0px #000000;
+
+	.numb-border{
+		border: 2px solid black;
+		height: 100px;
+		width: 100px;
+		border-radius: 100px;
+		text-align: center;
+		top:50%;
+		left:50%;
+		margin-left: -50px;
+		margin-top: -50px;
+		position: absolute;
+	}
+
+	h2{
+		font-size: 50px;
+		margin: 0px;
+		font-weight: 700;
+		line-height: 100px;
+
+	}
+}
+
+.cardWide{
+	width: 100%;
+}
+
+.leftStep{
+	margin-left: 60px;	
+}
+
+.card-inner{
+	z-index: 1;
+}
+
+.card-top{
+	margin-left: 60px;
+	z-index: 2;
+}
